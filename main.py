@@ -10,11 +10,14 @@ app = Flask(__name__)
 # Body는 JSON 형식으로 요청
 
 def recommendation():
+
     if request.method == "POST":
         data = request.get_json()
-        isbn = data.get("isbn")
-        if isbn:
-            return jsonify({"message": "Success! Request method is POST!"}), 201
+        isbn_num = int(data.get("isbn13"))
+        result = recommend_books([isbn_num], 50)
+
+        if isbn_num:
+            return jsonify(result), 201
         else:
             return jsonify({"message": "Error"}), 400
     else:
