@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/api", methods=["GET", "POST"])
 
 # Headers는 'Content-Type': 'application/json'
 # Body는 JSON 형식으로 요청
