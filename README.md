@@ -7,5 +7,9 @@ CSV 파일로부터 책 데이터를 불러와서 데이터프레임 형태로 �
 
 TF-IDF 알고리즘을 파이썬 환경에서 적용할 수 있는 방법에 대해 학습할 수 있었고, 기회가 된다면 **콘텐츠 필터링 추천 알고리즘 활용 역량을 향후 사용자에게 맞는 금융 상품 추천 기능 구현에 활용**해 보고 싶습니다.
 
+### pip install --upgrade pandas
+### pip install -U scikit-learn
+### 설치해야 합니다.
+
 ## 참고링크
 https://eda-ai-lab.tistory.com/525
